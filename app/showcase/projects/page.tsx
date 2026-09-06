@@ -1,0 +1,2 @@
+import { ShowcaseNav, ProjectArchive } from '@/src/components/showcase'
+export default function ProjectsPage() { return <main className="showcase-page"><section className="archive-intro"><p className="eyebrow accent">SHOWCASE / PROJECTS</p><h1>All <em>projects.</em></h1><p>Browse the complete archive by discipline, technology, or project type.</p><ShowcaseNav /></section><ProjectArchive /></main> }

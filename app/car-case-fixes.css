@@ -1,0 +1,398 @@
+.car-case-page {
+	--car-gap-xs: 0.5rem;
+	--car-gap-sm: 0.8rem;
+	--car-gap-md: 1.25rem;
+	--car-gap-lg: 2rem;
+	--car-card-padding: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+.car-case-page .project-section {
+	padding-block: clamp(4rem, 7vw, 6.5rem);
+}
+
+.car-case-page .project-section-heading {
+	margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.car-case-page .project-section-heading h2 {
+	max-width: 18ch;
+	margin-bottom: 0.9rem;
+}
+
+.car-case-page .project-section-lead {
+	max-width: 48rem;
+	margin: 0;
+}
+
+.car-case-page .project-hero-grid,
+.car-case-page .car-overview-grid,
+.car-case-page .car-training-compare-grid,
+.car-case-page .car-pred-scatter-grid,
+.car-case-page .car-why-ann-grid,
+.car-case-page .car-highlights-grid,
+.car-case-page .outcome-cards-grid,
+.car-case-page .car-data-quality-grid,
+.car-case-page .car-feature-flow,
+.car-case-page .car-preprocess-flow,
+.car-case-page .car-ann-architecture,
+.car-case-page .car-pipeline,
+.car-case-page .challenge-grid,
+.car-case-page .limitations-grid,
+.car-case-page .roadmap-grid,
+.car-case-page .role-grid,
+.car-case-page .tech-stack-grid,
+.car-case-page .pipeline-stage-grid {
+	gap: clamp(1rem, 2vw, 1.5rem);
+	min-width: 0;
+}
+
+.car-case-page .car-overview-grid,
+.car-case-page .car-training-compare-grid,
+.car-case-page .car-pred-scatter-grid,
+.car-case-page .car-why-ann-grid,
+.car-case-page .car-highlights-grid,
+.car-case-page .outcome-cards-grid,
+.car-case-page .challenge-grid,
+.car-case-page .limitations-grid,
+.car-case-page .roadmap-grid,
+.car-case-page .role-grid,
+.car-case-page .tech-stack-grid,
+.car-case-page .pipeline-stage-grid {
+	align-items: stretch;
+}
+
+.car-case-page .car-overview-card,
+.car-case-page .car-highlight-item,
+.car-case-page .why-card,
+.car-case-page .car-eda-visual-card,
+.car-case-page .car-trans-card,
+.car-case-page .encoding-card,
+.car-case-page .domain-card,
+.car-case-page .tech-card,
+.car-case-page .challenge-card,
+.car-case-page .limits-column,
+.car-case-page .roadmap-column,
+.car-case-page .role-item,
+.car-case-page .outcome-card,
+.car-case-page .pipeline-stage-card,
+.car-case-page .feature-card,
+.car-case-page .preprocess-card,
+.car-case-page .data-quality-card {
+	min-width: 0;
+	height: 100%;
+	padding: var(--car-card-padding);
+	display: flex;
+	flex-direction: column;
+	gap: var(--car-gap-sm);
+}
+
+.car-case-page .car-overview-card h3,
+.car-case-page .car-highlight-item h4,
+.car-case-page .why-card h4,
+.car-case-page .car-eda-visual-card h3,
+.car-case-page .car-trans-card h3,
+.car-case-page .encoding-card h3,
+.car-case-page .domain-card h3,
+.car-case-page .tech-card h3,
+.car-case-page .challenge-card h3,
+.car-case-page .outcome-card h3 {
+	margin: 0;
+	overflow-wrap: anywhere;
+}
+
+.car-case-page .car-overview-card p,
+.car-case-page .car-highlight-item p,
+.car-case-page .why-card p,
+.car-case-page .car-eda-visual-card p,
+.car-case-page .car-trans-card p,
+.car-case-page .encoding-card p,
+.car-case-page .domain-card p,
+.car-case-page .tech-card p,
+.car-case-page .challenge-card p,
+.car-case-page .outcome-card p {
+	margin: 0;
+	max-width: 62ch;
+	overflow-wrap: anywhere;
+}
+
+.car-case-page .overview-card-header,
+.car-case-page .curve-header,
+.car-case-page .scatter-header,
+.car-case-page .eval-table-header,
+.car-case-page .ann-diagram-header,
+.car-case-page .challenge-header,
+.car-case-page .col-header {
+	min-width: 0;
+	gap: var(--car-gap-sm);
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.car-case-page .overview-card-header h3,
+.car-case-page .curve-header h4,
+.car-case-page .scatter-header h4,
+.car-case-page .eval-table-header h4 {
+	min-width: 0;
+	flex: 1 1 12rem;
+	overflow-wrap: anywhere;
+}
+
+.car-case-page .car-hud-flow,
+.car-case-page .car-stat-banner,
+.car-case-page .car-data-quality-grid,
+.car-case-page .car-feature-flow,
+.car-case-page .car-preprocess-flow,
+.car-case-page .car-pipeline,
+.car-case-page .car-eval-table-container,
+.car-case-page .car-outcome-banner {
+	margin-top: var(--car-gap-lg);
+}
+
+.car-case-page .car-stat-banner {
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 0.85rem;
+	margin-bottom: 2rem;
+}
+
+.car-case-page .car-stat-card {
+	min-width: 0;
+	min-height: 150px;
+	padding: 1.25rem 1.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 0.65rem;
+	border: 1px solid rgba(178, 108, 255, 0.24);
+	border-top: 2px solid #b26cff;
+	border-radius: 12px;
+	background: linear-gradient(
+		145deg,
+		rgba(42, 26, 63, 0.88),
+		rgba(18, 14, 28, 0.94)
+	);
+	box-shadow: 0 12px 28px rgba(14, 6, 28, 0.18);
+}
+
+.car-case-page .car-stat-card:nth-child(2) {
+	border-top-color: #6d7cff;
+}
+.car-case-page .car-stat-card:nth-child(3) {
+	border-top-color: #ff9d2e;
+}
+.car-case-page .car-stat-card:nth-child(4) {
+	border-top-color: #44cf7c;
+}
+.car-case-page .car-stat-card:nth-child(5) {
+	border-top-color: #6dd9d0;
+}
+
+.car-case-page .car-stat-card .stat-number {
+	display: block;
+	color: #fff;
+	font-family: var(--font-poppins), sans-serif;
+	font-size: clamp(1.8rem, 3vw, 2.45rem);
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: -0.04em;
+}
+
+.car-case-page .car-stat-card .stat-name {
+	display: block;
+	color: #eadfff;
+	font-family: var(--font-geist-mono), monospace;
+	font-size: 0.62rem;
+	font-weight: 700;
+	line-height: 1.3;
+	letter-spacing: 0.1em;
+}
+
+.car-case-page .car-stat-card .stat-desc {
+	display: block;
+	color: #bdb4ce;
+	font-family: var(--font-open-sans), sans-serif;
+	font-size: 0.76rem;
+	line-height: 1.45;
+	overflow-wrap: anywhere;
+}
+
+.car-case-page .car-dataset-section .project-section-heading {
+	position: relative;
+	max-width: 54rem;
+	padding-left: 1.25rem;
+	border-left: 3px solid #b26cff;
+}
+
+.car-case-page .car-dataset-section .project-section-heading::after {
+	content: "DATA AUDIT / FEATURE SPACE";
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #a993c1;
+	font:
+		700 0.6rem var(--font-geist-mono),
+		monospace;
+	letter-spacing: 0.12em;
+}
+
+.car-case-page .car-dataset-section .car-stat-card {
+	position: relative;
+	overflow: hidden;
+}
+
+.car-case-page .car-dataset-section .car-stat-card::after {
+	position: absolute;
+	right: 0.9rem;
+	top: 0.75rem;
+	color: rgba(255, 255, 255, 0.24);
+	font:
+		700 0.58rem var(--font-geist-mono),
+		monospace;
+	letter-spacing: 0.08em;
+}
+
+.car-case-page .car-dataset-section .car-stat-card:nth-child(1)::after {
+	content: "01";
+}
+.car-case-page .car-dataset-section .car-stat-card:nth-child(2)::after {
+	content: "02";
+}
+.car-case-page .car-dataset-section .car-stat-card:nth-child(3)::after {
+	content: "03";
+}
+.car-case-page .car-dataset-section .car-stat-card:nth-child(4)::after {
+	content: "04";
+}
+.car-case-page .car-dataset-section .car-stat-card:nth-child(5)::after {
+	content: "05";
+}
+
+.car-case-page .car-dataset-section .car-table-wrapper {
+	margin-top: 0.5rem;
+	border-top: 2px solid rgba(178, 108, 255, 0.55);
+}
+
+.car-case-page .car-stat-card,
+.car-case-page .dgwo-stat-card,
+.car-case-page .car-hud-stat {
+	min-width: 0;
+	padding: 1rem;
+	gap: 0.35rem;
+}
+
+.car-case-page .car-stat-card strong,
+.car-case-page .car-hud-stat strong {
+	line-height: 1.1;
+}
+
+.car-case-page .car-table-toolbar,
+.car-case-page .car-hud-header,
+.car-case-page .outlier-section-header,
+.car-case-page .trans-header,
+.car-case-page .enc-header {
+	gap: var(--car-gap-sm);
+	flex-wrap: wrap;
+}
+
+.car-case-page .car-table-toolbar > *,
+.car-case-page .car-hud-header > *,
+.car-case-page .outlier-section-header > *,
+.car-case-page .trans-header > *,
+.car-case-page .enc-header > * {
+	min-width: 0;
+}
+
+.car-case-page .car-table-wrapper,
+.car-case-page .car-outlier-section,
+.car-case-page .car-ann-diagram-wrapper,
+.car-case-page .car-e2e-card,
+.car-case-page .limits-column,
+.car-case-page .roadmap-column {
+	padding: var(--car-card-padding);
+}
+
+.car-case-page .car-overview-grid > *,
+.car-case-page .car-training-compare-grid > *,
+.car-case-page .car-pred-scatter-grid > *,
+.car-case-page .car-why-ann-grid > *,
+.car-case-page .car-highlights-grid > *,
+.car-case-page .outcome-cards-grid > *,
+.car-case-page .challenge-grid > *,
+.car-case-page .limitations-grid > *,
+.car-case-page .roadmap-grid > *,
+.car-case-page .role-grid > *,
+.car-case-page .tech-stack-grid > *,
+.car-case-page .pipeline-stage-grid > * {
+	min-width: 0;
+}
+
+@media (max-width: 900px) {
+	.car-case-page .car-stat-banner {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.car-case-page .car-overview-grid,
+	.car-case-page .car-training-compare-grid,
+	.car-case-page .car-pred-scatter-grid,
+	.car-case-page .car-why-ann-grid,
+	.car-case-page .outcome-cards-grid,
+	.car-case-page .challenge-grid,
+	.car-case-page .limitations-grid,
+	.car-case-page .roadmap-grid,
+	.car-case-page .role-grid,
+	.car-case-page .tech-stack-grid,
+	.car-case-page .pipeline-stage-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 620px) {
+	.car-case-page .project-section {
+		padding-block: 3.5rem;
+	}
+
+	.car-case-page .car-overview-grid,
+	.car-case-page .car-training-compare-grid,
+	.car-case-page .car-pred-scatter-grid,
+	.car-case-page .car-why-ann-grid,
+	.car-case-page .car-highlights-grid,
+	.car-case-page .outcome-cards-grid,
+	.car-case-page .challenge-grid,
+	.car-case-page .limitations-grid,
+	.car-case-page .roadmap-grid,
+	.car-case-page .role-grid,
+	.car-case-page .tech-stack-grid,
+	.car-case-page .pipeline-stage-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.car-case-page .car-overview-card,
+	.car-case-page .car-highlight-item,
+	.car-case-page .why-card,
+	.car-case-page .car-eda-visual-card,
+	.car-case-page .car-trans-card,
+	.car-case-page .encoding-card,
+	.car-case-page .domain-card,
+	.car-case-page .tech-card,
+	.car-case-page .challenge-card,
+	.car-case-page .limits-column,
+	.car-case-page .roadmap-column,
+	.car-case-page .role-item,
+	.car-case-page .outcome-card {
+		padding: 1.15rem;
+	}
+
+	.car-case-page .car-stat-banner {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.car-case-page .car-stat-card {
+		min-height: 132px;
+		padding: 1rem;
+	}
+
+	.car-case-page .car-dataset-section .project-section-heading::after {
+		position: static;
+		display: block;
+		margin-top: 1rem;
+	}
+}

@@ -1,0 +1,5 @@
+allowBuilds:
+  puppeteer: false
+minimumReleaseAgeExclude:
+  - '@next/*'
+  - next

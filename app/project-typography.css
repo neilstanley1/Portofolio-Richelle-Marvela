@@ -1,0 +1,176 @@
+:root {
+	--type-display: var(--font-poppins), sans-serif;
+	--type-body: var(--font-open-sans), sans-serif;
+	--type-mono: var(--font-geist-mono), monospace;
+	--weight-regular: 400;
+	--weight-medium: 500;
+	--weight-semibold: 600;
+	--weight-bold: 700;
+	--text-hero-title: clamp(2.75rem, 5.3vw, 4.5rem);
+	--text-hero-subtitle: clamp(1.15rem, 2vw, 1.45rem);
+	--text-section-title: clamp(1.8rem, 3.2vw, 2.5rem);
+	--text-body: 1rem;
+	--text-body-small: 0.88rem;
+	--text-label: 0.65rem;
+	--text-meta: 0.72rem;
+	--text-button: 0.72rem;
+	--leading-title: 1.08;
+	--leading-heading: 1.2;
+	--leading-body: 1.7;
+	--tracking-label: 0.1em;
+	--tracking-title: -0.035em;
+}
+
+.project-page-root {
+	font-family: var(--type-body);
+	font-weight: var(--weight-regular);
+	line-height: var(--leading-body);
+}
+
+.project-page-root h1,
+.project-page-root h2,
+.project-page-root h3,
+.project-page-root h4 {
+	font-family: var(--type-display) !important;
+	font-weight: var(--weight-bold) !important;
+	letter-spacing: var(--tracking-title) !important;
+}
+
+.project-page-root h1 {
+	font-size: var(--text-hero-title) !important;
+	line-height: var(--leading-title) !important;
+}
+
+.project-page-root h2 {
+	font-size: var(--text-section-title) !important;
+	line-height: var(--leading-heading) !important;
+}
+
+.project-page-root h3 {
+	font-size: 1.15rem !important;
+	line-height: 1.35 !important;
+}
+
+.project-page-root h4 {
+	font-size: 1rem !important;
+	line-height: 1.4 !important;
+}
+
+.project-page-root p,
+.project-page-root li,
+.project-page-root a,
+.project-page-root input,
+.project-page-root textarea,
+.project-page-root select {
+	font-family: var(--type-body) !important;
+	font-size: var(--text-body) !important;
+	font-weight: var(--weight-regular) !important;
+	line-height: var(--leading-body) !important;
+	letter-spacing: 0 !important;
+}
+
+.project-page-root small,
+.project-page-root .project-section-lead,
+.project-page-root .project-body-copy,
+.project-page-root .project-grid-copy {
+	font-family: var(--type-body) !important;
+	font-size: var(--text-body-small) !important;
+	line-height: var(--leading-body) !important;
+}
+
+.project-page-root .project-kicker,
+.project-page-root [class*="-kicker"],
+.project-page-root .aquamuse-kicker,
+.project-page-root .dgwo-kicker,
+.project-page-root .traffic-kicker,
+.project-page-root .project-tag,
+.project-page-root [class*="-tag"],
+.project-page-root [class*="section-num"],
+.project-page-root [class*="section-label"],
+.project-page-root .aquamuse-tag,
+.project-page-root .dgwo-tag,
+.project-page-root .meta-label,
+.project-page-root .project-meta-label,
+.project-page-root [class*="meta-label"],
+.project-page-root [class*="card-badge"],
+.project-page-root [class*="badge"],
+.project-page-root [class*="eyebrow"],
+.project-page-root .project-nav-eyebrow,
+.project-page-root .project-card-badge,
+.project-page-root .stack-cat,
+.project-page-root .traffic-heading > span,
+.project-page-root .traffic-artifact-head > span,
+.project-page-root .traffic-cost-meta,
+.project-page-root .traffic-disclaimer {
+	font-family: var(--type-mono) !important;
+	font-size: var(--text-label) !important;
+	font-weight: var(--weight-semibold) !important;
+	line-height: 1.35 !important;
+	letter-spacing: var(--tracking-label) !important;
+	text-transform: uppercase;
+}
+
+.project-page-root .project-meta-val,
+.project-page-root .meta-val,
+.project-page-root .project-meta-item strong {
+	font-family: var(--type-body) !important;
+	font-size: var(--text-meta) !important;
+	font-weight: var(--weight-semibold) !important;
+	line-height: 1.45 !important;
+	letter-spacing: 0 !important;
+}
+
+.project-page-root .project-back-btn,
+.project-page-root .project-github-button,
+.project-page-root .project-nav-all-btn,
+.project-page-root button {
+	font-family: var(--type-mono) !important;
+	font-size: var(--text-button) !important;
+	font-weight: var(--weight-semibold) !important;
+	line-height: 1.3 !important;
+	letter-spacing: var(--tracking-label) !important;
+	text-transform: uppercase;
+}
+
+.project-page-root .project-nav-title {
+	display: block;
+	font-family: var(--type-display) !important;
+	font-size: 0.98rem !important;
+	font-weight: var(--weight-bold) !important;
+	line-height: 1.35 !important;
+	letter-spacing: 0 !important;
+}
+
+.project-page-root .project-card h3,
+.project-page-root .project-card-title,
+.project-page-root .project-github-card h3 {
+	font-family: var(--type-display) !important;
+	font-size: 1.15rem !important;
+	font-weight: var(--weight-bold) !important;
+	line-height: 1.35 !important;
+	letter-spacing: var(--tracking-title) !important;
+}
+
+.project-page-root .project-card p,
+.project-page-root .project-github-card p {
+	font-family: var(--type-body) !important;
+	font-size: var(--text-body-small) !important;
+	font-weight: var(--weight-regular) !important;
+	line-height: var(--leading-body) !important;
+}
+
+@media (max-width: 700px) {
+	:root {
+		--text-hero-title: clamp(2.35rem, 11vw, 3.2rem);
+		--text-hero-subtitle: 1.08rem;
+		--text-section-title: clamp(1.65rem, 8vw, 2.15rem);
+		--text-body: 0.96rem;
+		--text-body-small: 0.84rem;
+		--text-meta: 0.68rem;
+		--text-button: 0.66rem;
+	}
+
+	.project-page-root .project-nav-grid {
+		row-gap: 1.25rem;
+	}
+}

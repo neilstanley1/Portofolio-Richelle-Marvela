@@ -1,0 +1,2 @@
+import { ShowcaseNav, ToolsGrid } from '@/src/components/showcase'
+export default function ToolsPage() { return <main className="showcase-page"><section className="archive-intro"><p className="eyebrow accent">SHOWCASE / TOOLS</p><h1>Tools &amp;<br /><em>technologies.</em></h1><p>A working vocabulary of languages, frameworks, platforms, and methods — linked back to the projects where they were used.</p><ShowcaseNav /></section><ToolsGrid /></main> }
