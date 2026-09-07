@@ -2852,6 +2852,289 @@
 	color: #0f172a !important;
 }
 
+/* ── Final responsive pass for all project detail shells ── */
+@media (max-width: 768px) {
+	.project-page-root {
+		max-width: 100%;
+		overflow-x: clip;
+	}
+
+	.project-container,
+	.schola-container,
+	.aquamuse-container,
+	.mbelys-container,
+	.contentbay-container,
+	.aqi-container,
+	.dgwo-container,
+	.aurame-header-container,
+	.aurame-container,
+	.case-hero,
+	.case-intro,
+	.case-sections {
+		width: 100% !important;
+		max-width: none !important;
+		padding-inline: 1rem !important;
+	}
+
+	.project-hero-section,
+	.schola-hero-section,
+	.aquamuse-hero-section,
+	.mbelys-hero-section,
+	.contentbay-hero-section,
+	.aqi-hero-section,
+	.dgwo-hero-section,
+	.aurame-header-section,
+	.case-hero {
+		padding-top: 1.5rem !important;
+		padding-bottom: 3rem !important;
+	}
+
+	.project-hero-layout-split,
+	.schola-hero-layout,
+	.project-split-intro,
+	.schola-split-intro,
+	.aquamuse-grid-2col,
+	.mbelys-grid-2col,
+	.case-intro,
+	.case-sections {
+		grid-template-columns: minmax(0, 1fr) !important;
+		gap: 2rem !important;
+	}
+
+	.project-hero-title,
+	.schola-hero-title,
+	.aquamuse-hero-title,
+	.mbelys-hero-title,
+	.contentbay-hero-title,
+	.aqi-hero-title,
+	.dgwo-hero-title,
+	.aurame-project-title,
+	.case-hero h1 {
+		font-size: var(--text-hero-title) !important;
+		line-height: 1.04 !important;
+		max-width: 100% !important;
+		overflow-wrap: anywhere;
+	}
+
+	.project-hero-subtitle,
+	.schola-hero-subtitle,
+	.aquamuse-hero-subtitle,
+	.mbelys-hero-subtitle,
+	.contentbay-hero-subtitle,
+	.aqi-hero-subtitle,
+	.dgwo-hero-subtitle,
+	.aurame-project-subtitle,
+	.case-lede {
+		font-size: var(--text-hero-subtitle) !important;
+		max-width: none !important;
+		line-height: 1.55 !important;
+	}
+
+	.project-meta-grid,
+	.schola-meta-grid,
+	.aquamuse-meta-grid,
+	.mbelys-meta-grid,
+	.contentbay-meta-grid,
+	.aqi-meta-grid,
+	.dgwo-meta-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
+
+	.case-meta {
+		display: grid !important;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1rem !important;
+		margin-top: 2rem !important;
+	}
+
+	.project-meta-item,
+	.schola-meta-item,
+	.aquamuse-meta-item,
+	.mbelys-meta-item,
+	.contentbay-meta-item,
+	.aqi-meta-item,
+	.dgwo-meta-item,
+	.project-card,
+	.schola-feature-card,
+	.schola-role-card,
+	.aquamuse-card {
+		min-width: 0 !important;
+	}
+
+	.project-meta-val,
+	.meta-val,
+	.project-meta-item strong,
+	.project-card p,
+	.project-card h3,
+	.stack-group span {
+		overflow-wrap: anywhere;
+	}
+
+	.case-visual {
+		width: calc(100% - 2rem);
+		margin-inline: 1rem;
+		border-radius: 14px;
+	}
+
+	.project-gallery {
+		width: 100%;
+		margin: 1rem auto 3rem;
+		padding-inline: 0;
+		gap: 1rem;
+	}
+
+	.gallery-slot,
+	.gallery-slot.gallery-half,
+	.gallery-slot.gallery-third {
+		grid-column: span 12;
+		min-height: 220px;
+	}
+
+	.case-intro,
+	.case-pipeline,
+	.case-sections,
+	.project-section,
+	.schola-section,
+	.aquamuse-section,
+	.mbelys-section,
+	.contentbay-section,
+	.aqi-section,
+	.dgwo-section,
+	.aurame-section {
+		padding-block: 3.5rem !important;
+	}
+
+	.case-intro h2,
+	.case-sections h2,
+	.project-section-heading h2,
+	.schola-section-heading h2,
+	.schola-header-center h2,
+	.aquamuse-grid-2col h2,
+	.aquamuse-header-center h2,
+	.mbelys-grid-2col h2,
+	.mbelys-header-center h2,
+	.contentbay-section-heading h2,
+	.aqi-section-heading h2,
+	.dgwo-section-heading h2 {
+		font-size: var(--text-section-title) !important;
+		line-height: 1.15 !important;
+	}
+
+	.project-github-content,
+	.schola-github-content,
+	.github-cta-content,
+	.project-github-actions,
+	.case-links > div,
+	.aurame-cta-actions {
+		width: 100% !important;
+		flex-wrap: wrap !important;
+	}
+
+	.project-github-button,
+	.schola-github-button,
+	.github-btn,
+	.case-links a,
+	.aurame-primary-cta-btn {
+		min-height: 2.75rem;
+		max-width: 100%;
+		white-space: normal !important;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.project-nav-grid,
+	.schola-case-nav,
+	.aquamuse-nav-links,
+	.mbelys-nav-links,
+	.contentbay-nav-links,
+	.aqi-nav-links,
+	.dgwo-nav-links,
+	.aurame-nav-footer-links {
+		width: 100% !important;
+		padding-inline: 1rem !important;
+		grid-template-columns: minmax(0, 1fr) !important;
+		gap: 0.75rem !important;
+	}
+
+	.project-nav-card,
+	.nav-prev,
+	.nav-next {
+		min-width: 0 !important;
+		padding: 1rem !important;
+	}
+
+	.project-nav-title,
+	.nav-prev strong,
+	.nav-next strong {
+		overflow-wrap: anywhere;
+	}
+
+	.project-nav-all-btn,
+	.nav-all {
+		order: -1 !important;
+		width: fit-content !important;
+		max-width: 100%;
+		margin-inline: auto !important;
+	}
+
+	.project-page-root pre,
+	.project-page-root .code-block,
+	.project-page-root .table-container,
+	.project-page-root .diagram-container,
+	.project-page-root .architecture-diagram,
+	.project-page-root .wide-chart {
+		max-width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.project-page-root img,
+	.project-page-root svg,
+	.project-page-root video,
+	.project-page-root iframe {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.project-meta-grid,
+	.schola-meta-grid,
+	.aquamuse-meta-grid,
+	.mbelys-meta-grid,
+	.contentbay-meta-grid,
+	.aqi-meta-grid,
+	.dgwo-meta-grid,
+	.case-meta {
+		grid-template-columns: minmax(0, 1fr) !important;
+	}
+
+	.project-container,
+	.schola-container,
+	.aquamuse-container,
+	.mbelys-container,
+	.contentbay-container,
+	.aqi-container,
+	.dgwo-container,
+	.aurame-header-container,
+	.aurame-container,
+	.case-hero,
+	.case-intro,
+	.case-sections {
+		padding-inline: 0.875rem !important;
+	}
+
+	.case-visual {
+		width: calc(100% - 1.75rem);
+		margin-inline: 0.875rem;
+	}
+
+	.gallery-slot,
+	.gallery-slot.gallery-half,
+	.gallery-slot.gallery-third {
+		min-height: 180px;
+	}
+}
+
 /* ==========================================================================
    BLOO — SMARTFARM IoT CASE STUDY THEME & COMPONENTS
    Palette: Earthy Off-White (#f7f9f6), Deep Agricultural Emerald (#2d6a4f),

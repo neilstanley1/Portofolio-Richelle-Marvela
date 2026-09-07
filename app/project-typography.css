@@ -21,6 +21,15 @@
 	--tracking-title: -0.035em;
 }
 
+@media (max-width: 768px) {
+	:root {
+		--text-hero-title: clamp(2.15rem, 10vw, 3.25rem);
+		--text-hero-subtitle: clamp(1.05rem, 4.2vw, 1.25rem);
+		--text-section-title: clamp(1.65rem, 7vw, 2.15rem);
+		--leading-title: 1.04;
+	}
+}
+
 .project-page-root {
 	font-family: var(--type-body);
 	font-weight: var(--weight-regular);
