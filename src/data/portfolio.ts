@@ -27,7 +27,7 @@ export const projects: PortfolioProject[] = [
 		id: "mbelys",
 		title: "MBELYS",
 		primaryCategory: "IoT · ML · Cloud",
-		categories: ["AI / ML", "IoT", "Cloud", "Systems"],
+		categories: ["IoT","AI / ML","Cloud","Systems","Data / Analytics"],
 		technologies: ["GCP", "Firebase", "IoT", "Machine Learning"],
 		role: "Team Member · System Analyst / Developer",
 		year: "2025",
@@ -44,7 +44,7 @@ export const projects: PortfolioProject[] = [
 		id: "contentbay",
 		title: "ContentBay",
 		primaryCategory: "Software Engineering",
-		categories: ["Software", "Web Development", "Systems"],
+		categories: ["Software","Systems","Web Development"],
 		technologies: ["Web", "System Analysis"],
 		role: "Developer & System Analyst",
 		description:
@@ -58,7 +58,7 @@ export const projects: PortfolioProject[] = [
 		id: "indobert",
 		title: "IndoBERT News Classification",
 		primaryCategory: "AI · NLP",
-		categories: ["AI / ML", "NLP / Text Mining"],
+		categories: ["AI / ML","NLP / Text Mining","Data / Analytics"],
 		technologies: [
 			"IndoBERT",
 			"PyTorch",
@@ -82,7 +82,7 @@ export const projects: PortfolioProject[] = [
 		id: "summarization",
 		title: "AQuaMUSE — Multi-Doc Summarization",
 		primaryCategory: "NLP · Text Mining",
-		categories: ["AI / ML", "NLP / Text Mining"],
+		categories: ["AI / ML","NLP / Text Mining","Data / Analytics"],
 		technologies: ["AQuaMUSE", "BART-large-cnn", "RAKE", "KeyBERT", "PyTorch"],
 		role: "ML Researcher",
 		description:
@@ -100,7 +100,7 @@ export const projects: PortfolioProject[] = [
 		id: "aqi",
 		title: "Real-Time AQI Prediction",
 		primaryCategory: "Data · Streaming",
-		categories: ["Data", "Systems", "AI / ML"],
+		categories: ["AI / ML","Data / Analytics","Cloud","Systems"],
 		technologies: ["Python", "Data Streaming", "Machine Learning"],
 		role: "Data / ML Developer",
 		description:
@@ -113,7 +113,7 @@ export const projects: PortfolioProject[] = [
 		id: "dgwo",
 		title: "DGWO-F2OPT",
 		primaryCategory: "Optimization · AI",
-		categories: ["Optimization", "AI / ML", "Systems"],
+		categories: ["Optimization","AI / ML","Systems"],
 		technologies: ["Grey Wolf Optimization", "Fuzzy Logic", "CVRPTW", "2-opt"],
 		role: "Optimization Researcher",
 		description:
@@ -130,7 +130,7 @@ export const projects: PortfolioProject[] = [
 		id: "orbi",
 		title: "ORBI",
 		primaryCategory: "AI · Accessibility",
-		categories: ["AI / ML", "Software", "UI/UX"],
+		categories: ["AI / ML","Computer Vision","Software","UI/UX"],
 		technologies: ["Python", "Flask", "OCR", "TTS", "Object Detection"],
 		role: "Independent Developer",
 		description:
@@ -144,7 +144,7 @@ export const projects: PortfolioProject[] = [
 		id: "schola",
 		title: "Schola",
 		primaryCategory: "Full-Stack Web",
-		categories: ["Software", "UI/UX"],
+		categories: ["Software","UI/UX","Systems"],
 		technologies: ["Laravel", "PHP", "JavaScript", "CSS"],
 		role: "Full-Stack Developer / UI/UX",
 		description:
@@ -157,7 +157,7 @@ export const projects: PortfolioProject[] = [
 		id: "emotion",
 		title: "6-Class Emotion Classification",
 		primaryCategory: "AI · NLP",
-		categories: ["AI / ML", "NLP / Text Mining"],
+		categories: ["AI / ML","NLP / Text Mining","Data / Analytics"],
 		technologies: ["DistilBERT", "BiGRU", "PyTorch"],
 		role: "ML Researcher",
 		description:
@@ -170,7 +170,7 @@ export const projects: PortfolioProject[] = [
 		id: "fruit",
 		title: "Fruit & Rotten Fruit Classification",
 		primaryCategory: "AI · Computer Vision",
-		categories: ["AI / ML", "Computer Vision", "Generative Modeling"],
+		categories: ["AI / ML","Computer Vision","Data / Analytics"],
 		technologies: [
 			"PyTorch",
 			"Torchvision",
@@ -198,7 +198,7 @@ export const projects: PortfolioProject[] = [
 		id: "nail-disease",
 		title: "Nail Disease Classification",
 		primaryCategory: "AI · Computer Vision",
-		categories: ["AI / ML", "Computer Vision", "Medical AI", "Deep Learning"],
+		categories: ["AI / ML","Computer Vision","Data / Analytics"],
 		technologies: [
 			"PyTorch",
 			"EfficientNet-B0",
@@ -226,7 +226,7 @@ export const projects: PortfolioProject[] = [
 		id: "car",
 		title: "Car Price Prediction",
 		primaryCategory: "Machine Learning · Regression",
-		categories: ["AI / ML", "Data"],
+		categories: ["AI / ML","Data / Analytics"],
 		technologies: [
 			"Python",
 			"TensorFlow",
@@ -250,7 +250,7 @@ export const projects: PortfolioProject[] = [
 		id: "youtube",
 		title: "YouTube AI Education Analysis",
 		primaryCategory: "Data · NLP",
-		categories: ["Data", "NLP / Text Mining"],
+		categories: ["Data / Analytics","NLP / Text Mining","AI / ML"],
 		technologies: ["Python", "NLTK", "TF-IDF", "LDA", "BERTopic", "KMeans"],
 		role: "Data Analyst",
 		description:
@@ -267,7 +267,7 @@ export const projects: PortfolioProject[] = [
 		id: "flood",
 		title: "GIS Banjir Jakarta",
 		primaryCategory: "GIS · Data Analysis · System Analysis",
-		categories: ["GIS", "Data", "Systems"],
+		categories: ["GIS","Data / Analytics","Systems","Software"],
 		technologies: ["ArcGIS", "GeoJSON", "Web GIS"],
 		role: "System Analyst · GIS/Data Handling",
 		description:
@@ -280,7 +280,7 @@ export const projects: PortfolioProject[] = [
 		id: "traffic",
 		title: "AWS Smart City Traffic Management System",
 		primaryCategory: "Cloud Architecture · AWS",
-		categories: ["Cloud", "IoT", "AI / ML", "Data", "Systems"],
+		categories: ["Cloud","IoT","AI / ML","Data / Analytics","Systems","Optimization"],
 		technologies: ["AWS", "IoT", "Streaming", "AI/ML", "Big Data"],
 		role: "Cloud Architecture / System Design",
 		description:
@@ -296,7 +296,7 @@ export const projects: PortfolioProject[] = [
 		id: "bloo",
 		title: "BLOO",
 		primaryCategory: "IoT · Smart Agriculture",
-		categories: ["IoT", "Embedded", "Systems", "Automation"],
+		categories: ["IoT","Cloud","Systems","Software"],
 		technologies: [
 			"ESP32",
 			"Firebase",
@@ -323,7 +323,7 @@ export const projects: PortfolioProject[] = [
 		id: "serenesoul",
 		title: "Serene Soul",
 		primaryCategory: "UI/UX · Mental Health",
-		categories: ["UI/UX", "Product Design", "Mobile", "HCI"],
+		categories: ["UI/UX","Software"],
 		technologies: [
 			"Figma",
 			"User Research",
@@ -348,7 +348,7 @@ export const projects: PortfolioProject[] = [
 		id: "jci",
 		title: "JCI — Drone Innovation",
 		primaryCategory: "Web Design · Frontend",
-		categories: ["UI/UX", "Frontend", "Web Development", "Prototyping"],
+		categories: ["Software","UI/UX"],
 		technologies: [
 			"Figma",
 			"HTML5",
@@ -377,7 +377,7 @@ export const projects: PortfolioProject[] = [
 		id: "aurame",
 		title: "Aurame",
 		primaryCategory: "UI/UX · E-Commerce",
-		categories: ["UI/UX", "Software"],
+		categories: ["UI/UX","Software"],
 		technologies: ["Figma", "Web Design"],
 		role: "Product Designer",
 		description:
@@ -387,19 +387,130 @@ export const projects: PortfolioProject[] = [
 	},
 ];
 
-export const areas = [
+export const PROJECT_CATEGORIES = [
 	"ALL",
 	"SOFTWARE",
 	"AI / ML",
 	"NLP / TEXT MINING",
-	"DATA",
+	"DATA / ANALYTICS",
+	"COMPUTER VISION",
 	"CLOUD",
+	"IoT",
 	"SYSTEMS",
 	"OPTIMIZATION",
-	"IoT",
 	"GIS",
 	"UI/UX",
+] as const;
+
+export type ProjectCategory = (typeof PROJECT_CATEGORIES)[number];
+export const areas = PROJECT_CATEGORIES;
+
+export function normalizeCategory(cat: string): string {
+	const c = (cat || "").trim().toUpperCase().replace(/\s*&\s*/g, " / ");
+	if (c === "IOT" || c === "INTERNET OF THINGS") return "IOT";
+	if (c === "AI / ML" || c === "AI" || c === "ML" || c === "MACHINE LEARNING" || c === "DEEP LEARNING" || c === "AI/ML") return "AI / ML";
+	if (c === "NLP / TEXT MINING" || c === "NLP" || c === "TEXT MINING" || c === "NLP/TEXT MINING") return "NLP / TEXT MINING";
+	if (c === "DATA / ANALYTICS" || c === "DATA" || c === "ANALYTICS" || c === "DATA SCIENCE" || c === "DATA ANALYSIS") return "DATA / ANALYTICS";
+	if (c === "COMPUTER VISION" || c === "CV" || c === "VISION" || c === "IMAGE CLASSIFICATION") return "COMPUTER VISION";
+	if (c === "CLOUD" || c === "CLOUD ARCHITECTURE" || c === "AWS" || c === "GCP") return "CLOUD";
+	if (c === "SOFTWARE" || c === "SOFTWARE ENGINEERING" || c === "WEB DEVELOPMENT" || c === "FRONTEND" || c === "FULL-STACK" || c === "WEB") return "SOFTWARE";
+	if (c === "UI/UX" || c === "UI / UX" || c === "PRODUCT DESIGN" || c === "WEB DESIGN" || c === "HCI") return "UI/UX";
+	if (c === "SYSTEMS" || c === "SYSTEM ANALYSIS" || c === "SYSTEM ARCHITECTURE" || c === "EMBEDDED" || c === "AUTOMATION") return "SYSTEMS";
+	if (c === "OPTIMIZATION" || c === "MATHEMATICS / OPTIMIZATION" || c === "ALGORITHMS") return "OPTIMIZATION";
+	if (c === "GIS" || c === "WEB GIS") return "GIS";
+	return c;
+}
+
+export function matchesCategory(project: PortfolioProject, category: string): boolean {
+	if (!category || category.trim().toUpperCase() === "ALL") return true;
+	const target = normalizeCategory(category);
+
+	// 1. Direct match in project categories
+	if (project.categories && project.categories.some((c) => normalizeCategory(c) === target)) {
+		return true;
+	}
+
+	// 2. Direct match or part in primaryCategory
+	if (project.primaryCategory) {
+		const normalizedPrimary = normalizeCategory(project.primaryCategory);
+		if (normalizedPrimary === target) return true;
+		const parts = project.primaryCategory.split(/[·,/|]/).map(p => normalizeCategory(p.trim()));
+		if (parts.includes(target)) return true;
+	}
+
+	// 3. Match in technologies if directly related to a distinct discipline (e.g. IoT)
+	if (target === "IOT" && project.technologies && project.technologies.some(t => normalizeCategory(t) === "IOT")) {
+		return true;
+	}
+
+	return false;
+}
+export interface ExperienceItem {
+	organization: string;
+	role: string;
+	period: string;
+	current?: boolean;
+	description: string;
+	tags?: string[];
+}
+
+export const experienceItems: ExperienceItem[] = [
+	{
+		organization: "ContentBay",
+		role: "Developer & System Analyst",
+		period: "2026 — Present",
+		current: true,
+		description:
+			"Contributed to requirements understanding, system workflows, and web application development for the platform.",
+		tags: ["Software Engineering", "Systems", "Web"],
+	},
+	{
+		organization: "MBELYS",
+		role: "Team Member — PKM-KC Funded Project",
+		period: "2025",
+		current: false,
+		description:
+			"Designed system architecture and data pipelines for an IoT-based goat sound analysis system detecting stress and reproductive activity.",
+		tags: ["IoT", "ML", "GCP", "Firebase", "System Architecture"],
+	},
+	{
+		organization: "SASC",
+		role: "Scholarship Mentor & Tutor",
+		period: "2024 — Present",
+		current: true,
+		description:
+			"Mentoring students from different majors and supporting sustained academic progress.",
+		tags: ["Mentorship", "Academic Support", "Peer Tutoring"],
+	},
+	{
+		organization: "SASC",
+		role: "Scholarship Tutor — Scientific Computing",
+		period: "2025",
+		current: false,
+		description:
+			"Assisted students with Python programming and scientific computing problem solving.",
+		tags: ["Python", "Scientific Computing", "Problem Solving"],
+	},
+	{
+		organization: "MATIC 2025",
+		role: "Head of Publication & Documentation",
+		period: "2024 — 2025",
+		current: false,
+		description:
+			"Led publication and documentation activities, coordinating visual identity and event media coverage.",
+		tags: ["Creative Direction", "Documentation", "Team Leadership"],
+	},
+	{
+		organization: "HIMMAT Welcoming Party",
+		role: "Publication & Documentation Staff",
+		period: "2024",
+		current: false,
+		description:
+			"Designed event communication materials and visual presentation assets.",
+		tags: ["Visual Design", "Media", "Event Operations"],
+	},
 ];
+
 export const experience = [
 	[
 		"ContentBay",
@@ -428,8 +539,8 @@ export const experience = [
 	],
 	[
 		"SASC",
-		"Scholarship Mentor",
-		"2024–2026 · Mentored students from different majors and supported academic progress.",
+		"Scholarship Mentor & Tutor",
+		"2024 — Present · Mentoring students from different majors and supporting academic progress.",
 	],
 ];
 

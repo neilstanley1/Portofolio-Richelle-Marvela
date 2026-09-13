@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { ArrowUpRight, ChevronLeft, ChevronRight, Search } from "lucide-react";
+import { ArrowUpRight, ChevronLeft, ChevronRight, Search, X } from "lucide-react";
 import {
 	areas,
+	matchesCategory,
 	projects,
 	skills,
 	type PortfolioProject,
@@ -379,17 +380,26 @@ export function ToolsGrid({ preview = false }: { preview?: boolean }) {
 	if (preview) {
 		return (
 			<div className="tech-explorer-container">
-				{/* Horizontal Category Tab Strip */}
-				<div className="tech-tab-strip">
-					{homepageTechDock.map((g) => (
-						<button
-							key={g.category}
-							className={`tech-tab-btn ${activeCategory === g.category ? "active" : ""}`}
-							onClick={() => handleCategoryChange(g.category)}
-						>
-							{g.label}
-						</button>
-					))}
+				{/* Horizontal Category Tab Strip with responsive scroll track */}
+				<div className="tech-tab-strip-wrapper">
+					<div
+						className="tech-tab-strip"
+						role="tablist"
+						aria-label="Technology categories"
+					>
+						{homepageTechDock.map((g) => (
+							<button
+								key={g.category}
+								role="tab"
+								aria-selected={activeCategory === g.category}
+								className={`tech-tab-btn ${activeCategory === g.category ? "active" : ""}`}
+								onClick={() => handleCategoryChange(g.category)}
+							>
+								{g.label}
+							</button>
+						))}
+					</div>
+					<div className="tech-tab-fade" aria-hidden="true" />
 				</div>
 
 				{/* Section Sub-Header & Dynamic Page Indicators */}
@@ -553,53 +563,88 @@ export function ProjectArchive() {
 			? ""
 			: new URLSearchParams(window.location.search).get("tool") || "",
 	);
-	const filtered = useMemo(
-		() =>
-			projects.filter(
-				(p) =>
-					(active === "ALL" ||
-						p.categories.some((c) => c.toUpperCase().includes(active)) ||
-						p.primaryCategory.toUpperCase().includes(active)) &&
-					`${p.title} ${p.description} ${p.technologies.join(" ")}`
-						.toLowerCase()
-						.includes(query.toLowerCase()),
-			),
-		[active, query],
-	);
+	const filtered = useMemo(() => {
+		return projects.filter((p) => {
+			const matchesCat = matchesCategory(p, active);
+			if (!matchesCat) return false;
+
+			if (!query.trim()) return true;
+			const q = query.toLowerCase().trim();
+			const searchCorpus =
+				`${p.title} ${p.description} ${p.primaryCategory} ${p.categories.join(" ")} ${p.technologies.join(" ")} ${p.role}`.toLowerCase();
+			return searchCorpus.includes(q);
+		});
+	}, [active, query]);
 
 	return (
-		<>
-			<div className="archive-controls showcase-controls">
-				<label className="search-box">
-					<Search aria-hidden="true" />
-					<input
-						aria-label="Search projects"
-						placeholder="Search projects or technologies"
-						value={query}
-						onChange={(e) => setQuery(e.target.value)}
-					/>
-				</label>
-				<div className="filter-scroll">
-					{areas.map((area) => (
-						<button
-							key={area}
-							className={active === area ? "active" : ""}
-							onClick={() => setActive(area)}
-						>
-							{area}
-						</button>
-					))}
+		<div className="project-archive-root">
+			<div className="archive-discovery-hub showcase-controls">
+				<div className="discovery-search-row">
+					<label className="search-box">
+						<Search aria-hidden="true" className="search-icon" />
+						<input
+							aria-label="Search projects"
+							placeholder="Search projects, technologies, or keywords..."
+							value={query}
+							onChange={(e) => setQuery(e.target.value)}
+						/>
+						{query && (
+							<button
+								type="button"
+								className="search-clear-btn"
+								onClick={() => setQuery("")}
+								aria-label="Clear search"
+							>
+								<X size={14} />
+							</button>
+						)}
+					</label>
+				</div>
+
+				<div className="filter-scroll-wrapper">
+					<div
+						className="filter-scroll-container"
+						role="region"
+						aria-label="Project category filters"
+					>
+						<div className="filter-list" role="tablist">
+							{areas.map((area) => (
+								<button
+									key={area}
+									type="button"
+									role="tab"
+									aria-selected={active === area}
+									className={`filter-btn ${active === area ? "active" : ""}`}
+									onClick={() => setActive(area)}
+								>
+									<span className="filter-btn-text">{area}</span>
+								</button>
+							))}
+						</div>
+					</div>
+					<div className="filter-scroll-fade" aria-hidden="true" />
+				</div>
+
+				<div className="showcase-status-bar">
+					<div className="showcase-count-pill">
+						<span className="count-num">{filtered.length}</span>
+						<span className="count-label">
+							{filtered.length === 1 ? "RESULT" : "RESULTS"}
+						</span>
+					</div>
+					<div className="showcase-active-filter-badge">
+						<span className="filter-badge-label">FILTERED BY</span>
+						<span className="filter-badge-val">{active}</span>
+					</div>
 				</div>
 			</div>
-			<div className="showcase-count">
-				{filtered.length} RESULTS <span>FILTERED BY {active}</span>
-			</div>
+
 			<div className="showcase-project-grid">
 				{filtered.map((p, index) => (
 					<ProjectCard key={p.id} project={p} index={index} />
 				))}
 			</div>
-		</>
+		</div>
 	);
 }
 

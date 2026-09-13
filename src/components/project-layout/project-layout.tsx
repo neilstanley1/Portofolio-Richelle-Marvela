@@ -143,9 +143,6 @@ export function ProjectHero({
   )
 }
 
-/* ─────────────────────────────────────────────────────────────
-   5. STANDARDIZED CONTENT SECTION
-───────────────────────────────────────────────────────────── */
 export interface ProjectSectionProps {
   id?: string
   tag?: string

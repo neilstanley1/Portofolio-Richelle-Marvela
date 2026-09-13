@@ -12,6 +12,7 @@ import {
 import {
 	areas,
 	experience,
+	experienceItems,
 	projects,
 	skills,
 	social,
@@ -356,15 +357,38 @@ export default function Page() {
 								<em>contributed.</em>
 							</h2>
 						</div>
+						<p className="section-note">
+							Engineering roles, academic mentorship, system analysis, and institutional initiatives.
+						</p>
 					</div>
 					<div className="timeline">
-						{experience.map(([place, role, detail]) => (
-							<div className="timeline-row reveal" key={`${place}-${role}`}>
-								<span className="timeline-dot" />
-								<div>
-									<p className="eyebrow">{place}</p>
-									<h3>{role}</h3>
-									<p>{detail}</p>
+						{experienceItems.map((item) => (
+							<div
+								className="timeline-row reveal"
+								key={`${item.organization}-${item.role}`}
+							>
+								<span className={`timeline-dot ${item.current ? "is-current" : ""}`} />
+								<div className="timeline-card">
+									<div className="timeline-meta-row">
+										<span className="timeline-org">{item.organization}</span>
+										<div className="timeline-date-group">
+											{item.current && (
+												<span className="timeline-active-pill">ACTIVE</span>
+											)}
+											<span className="timeline-period">{item.period}</span>
+										</div>
+									</div>
+									<h3 className="timeline-role">{item.role}</h3>
+									<p className="timeline-desc">{item.description}</p>
+									{item.tags && item.tags.length > 0 && (
+										<div className="timeline-tags">
+											{item.tags.map((tag) => (
+												<span key={tag} className="timeline-tag">
+													{tag}
+												</span>
+											))}
+										</div>
+									)}
 								</div>
 							</div>
 						))}
@@ -374,7 +398,7 @@ export default function Page() {
 					id="skills"
 					className="preview-band preview-dark preview-tech-wall section-wrap"
 				>
-					<div className="preview-heading">
+					<div className="preview-heading tech-section-heading">
 						<div>
 							<p className="eyebrow accent">07 / TECHNOLOGIES &amp; TOOLS</p>
 							<h2>
@@ -383,7 +407,7 @@ export default function Page() {
 								<em>intention.</em>
 							</h2>
 						</div>
-						<a className="text-button cta-button" href="/showcase/tools">
+						<a className="text-button cta-button tech-explore-btn" href="/showcase/tools">
 							EXPLORE ALL TECHNOLOGIES <ArrowUpRight />
 						</a>
 					</div>

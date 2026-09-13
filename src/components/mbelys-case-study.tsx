@@ -11,9 +11,6 @@ import {
   ProjectNavFooter,
 } from '@/src/components/project-layout/project-layout'
 
-/* ─────────────────────────────────────────────
-   SCROLL REVEAL HOOK
-───────────────────────────────────────────── */
 function useReveal() {
   const ref = useRef<HTMLElement | null>(null)
 
